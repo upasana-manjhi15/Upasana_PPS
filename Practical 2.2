@@ -1,0 +1,73 @@
+#include <stdio.h>
+int main()
+{
+    int maths,pps,bee,egd,etc;
+    int total;
+    float percentage;
+    printf("\n enter the marks for maths");
+    scanf("%d",&maths);
+    while (maths<0 || maths>100)
+    {
+        printf("\n enter valid marks");
+        printf("\n enter the marks for maths");
+        scanf("%d",&maths);
+    }
+    printf("\n enter the marks for pps");
+    scanf("%d",&pps);
+    while (pps<0 || pps>100)
+    {
+        printf("\n enter valid marks");
+        printf("\n enter the marks for pps");
+        scanf("%d",&pps);
+    }
+    printf("\n enter the marks for bee");
+    scanf("%d",&bee);
+    while (bee<0 || bee>100)
+    {
+        printf("\n enter valid marks");
+        printf("\n enter the marks for bee");
+        scanf("%d",&bee);
+    }
+    printf("\n enter the marks for egd");
+    scanf("%d",&egd);
+    while (egd<0 || egd>100)
+    {
+        printf("\n enter valid marks");
+        printf("\n enter the marks for egd");
+        scanf("%d",&egd);
+    }
+    printf("\n enter the marks for etc");
+    scanf("%d",&etc);
+    while (etc<0 || etc>100)
+    {
+        printf("\n enter valid marks");
+        printf("\n enter the marks for etc");
+        scanf("%d",&etc);
+    }
+
+    total = maths+pps+bee+egd+etc;
+    percentage =total/5;
+    printf("\n total marks =%d",total);
+    printf("\n percentage = %.2f",percentage);
+    if(percentage>=90)
+    {
+    printf("\n grade A");
+    }
+     else if(percentage>=75)
+    {
+    printf("\n grade B");
+    }
+    else if(percentage>=60)
+    {
+    printf("\n grade C");
+    }
+     else if(percentage>=40)
+    {
+    printf("\n grade D");
+    }
+     else 
+    {
+    printf("\n grade FAIL");
+    }
+    return 0;
+}
