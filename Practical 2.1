@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("\n enter the value of a:");
+    scanf("%d" , &a);
+    printf("\n enter the value of b:");
+    scanf("%d" , &b);
+    printf("\n enter the value of c:");
+    scanf("%d" , &c);
+    if (a>=b && a>=c)
+    {
+        printf(" a is maximum number");
+    }
+    else if (b>=a && b>=c)
+    {
+        printf(" b is maximum number");
+    }
+    else
+    {
+        printf(" c is maximum number");
+    }
+    return 0;
+}
